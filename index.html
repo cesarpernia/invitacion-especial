@@ -1,63 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A playful little Valentine question made with love.">
-  <meta name="theme-color" content="#f8cbd3">
+  <meta name="description" content="Una invitación especial para vivir un día de compras, paseo y regalitos juntos.">
+  <meta name="theme-color" content="#173b2b">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="A very important Valentine question">
-  <meta property="og:description" content="Someone has a tiny but very important question for you.">
-  <title>A Very Important Valentine Question</title>
-  <link rel="icon" href="./images/baddie.jpg">
+  <meta property="og:title" content="Una aventura para mi princesota ♡">
+  <meta property="og:description" content="Tengo una invitación muy especial para ti...">
+  <title>Una aventura contigo ♡</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="background-hearts" aria-hidden="true">
-    <span></span><span></span><span></span><span></span><span></span><span></span>
-  </div>
-
-  <main class="site-shell">
-    <article class="valentine-card" aria-labelledby="valentineQuestion">
-      <p class="postmark" aria-hidden="true"><strong>14</strong><span>FEB</span></p>
-
-      <section id="questionView">
-        <div class="art-frame">
-          <span class="tape tape-left" aria-hidden="true"></span>
-          <span class="tape tape-right" aria-hidden="true"></span>
-          <img id="imageDisplay" src="./images/image1.gif" alt="A happy duck surrounded by hearts" width="512" height="512">
+  <main id="app">
+    <div id="landing">
+      <section class="hero" id="bienvenida" aria-labelledby="heroTitle">
+        <div class="hero-orbit hero-orbit--outer" aria-hidden="true"></div>
+        <div class="hero-orbit hero-orbit--inner" aria-hidden="true"></div>
+        <img class="rose decor hero-rose-left" src="./assets/rosa.svg" alt="" aria-hidden="true">
+        <img class="rose decor hero-rose-right" src="./assets/rosa.svg" alt="" aria-hidden="true">
+        <svg class="decor hero-heart hero-heart--right" viewBox="0 0 42 40" aria-hidden="true"><path d="M21 35 4.5 19.7A10.7 10.7 0 0 1 20.8 5.8 10.7 10.7 0 0 1 37.5 19.7Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <svg class="decor hero-spark" viewBox="0 0 38 38" aria-hidden="true"><path d="M19 3c1 10 4 14 15 16-11 2-14 6-15 16C17 25 14 21 4 19 14 17 17 13 19 3Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M33 2v7M29.5 5.5h7" stroke="currentColor" stroke-width="1.4"/></svg>
+        <svg class="decor hero-gift hero-gift--left" viewBox="0 0 54 54" aria-hidden="true"><rect x="10" y="19" width="34" height="25" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 19h36v-7a3 3 0 0 0-3-3H12a3 3 0 0 0-3 3v7Zm18-10v35M10 31h34" fill="none" stroke="currentColor" stroke-width="2"/><path d="M27 12c-1.7-6.5-10-6.8-10-1.7 0 3.4 4.4 5.4 10 5.4M27 12c1.7-6.5 10-6.8 10-1.7 0 3.4-4.4 5.4-10 5.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <div class="hero-content">
+          <p class="sr-only">Una pequeña sorpresa para ti</p>
+          <h1 class="hero-title" id="heroTitle"><span>Hola mi</span><span>princesota</span><span>hermosa</span></h1>
+          <button type="button" class="hero-enter" id="openInvitation" aria-label="Abrir la invitación" title="Descubre tu invitación">
+            <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="13" cy="13" r="8.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m19.5 19.5 6.1 6.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </button>
         </div>
+      </section>
 
-        <div class="question-copy">
-          <h1 id="valentineQuestion">Will you be my Valentine?</h1>
+      <section class="invitation" id="invitacion" aria-labelledby="invitationTitle">
+        <div class="invitation-rings" aria-hidden="true"></div>
+        <img class="rose decor invitation-rose-left" src="./assets/rosa.svg" alt="" aria-hidden="true">
+        <img class="rose decor invitation-rose-right" src="./assets/rosa.svg" alt="" aria-hidden="true">
+        <svg class="decor invitation-heart" viewBox="0 0 42 40" aria-hidden="true"><path d="M21 35 4.5 19.7A10.7 10.7 0 0 1 20.8 5.8 10.7 10.7 0 0 1 37.5 19.7Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <svg class="decor invitation-gift invitation-gift--left" viewBox="0 0 54 54" aria-hidden="true"><rect x="10" y="19" width="34" height="25" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 19h36v-7a3 3 0 0 0-3-3H12a3 3 0 0 0-3 3v7Zm18-10v35M10 31h34" fill="none" stroke="currentColor" stroke-width="2"/><path d="M27 12c-1.7-6.5-10-6.8-10-1.7 0 3.4 4.4 5.4 10 5.4M27 12c1.7-6.5 10-6.8 10-1.7 0 3.4-4.4 5.4-10 5.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg class="decor invitation-gift invitation-gift--right" viewBox="0 0 54 54" aria-hidden="true"><rect x="10" y="19" width="34" height="25" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 19h36v-7a3 3 0 0 0-3-3H12a3 3 0 0 0-3 3v7Zm18-10v35M10 31h34" fill="none" stroke="currentColor" stroke-width="2"/><path d="M27 12c-1.7-6.5-10-6.8-10-1.7 0 3.4 4.4 5.4 10 5.4M27 12c1.7-6.5 10-6.8 10-1.7 0 3.4-4.4 5.4-10 5.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <div class="invitation-content">
+          <h2 id="invitationTitle">Tienes una invitación<br class="desktop-break"> directa para un día de<br class="desktop-break"> aventura con tu amorsote</h2>
+          <p class="invitation-summary" id="invitationSummary"></p>
+          <button type="button" class="pill-button" id="startQuestions">Continuar <span aria-hidden="true">→</span></button>
+          <div class="map-scene">
+            <img class="adventure-map" src="./assets/mapa.png" alt="Un mapa ilustrado con cuatro paradas para nuestra aventura: Mundo Total, China Import Maracaibo, El Castillo y Sambil Maracaibo." width="1254" height="1254" loading="lazy">
+          </div>
+          <p class="map-caption" id="mapCaption"></p>
+        </div>
+      </section>
+      <footer class="site-footer">Con todo mi amor, para nuestra próxima aventura de compras ♡</footer>
+    </div>
+
+    <section id="questionsScreen" class="questions-screen" aria-labelledby="questionTitle" hidden>
+      <div class="questions-halo" aria-hidden="true"></div>
+      <img class="rose decor question-rose-top" src="./assets/rosa.svg" alt="" aria-hidden="true">
+      <svg class="decor question-heart question-heart--top" viewBox="0 0 42 40" aria-hidden="true"><path d="M21 35 4.5 19.7A10.7 10.7 0 0 1 20.8 5.8 10.7 10.7 0 0 1 37.5 19.7Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+      <svg class="decor question-heart question-heart--bottom" viewBox="0 0 42 40" aria-hidden="true"><path d="M21 35 4.5 19.7A10.7 10.7 0 0 1 20.8 5.8 10.7 10.7 0 0 1 37.5 19.7Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+      <svg class="decor question-gift question-gift--left" viewBox="0 0 54 54" aria-hidden="true"><rect x="10" y="19" width="34" height="25" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 19h36v-7a3 3 0 0 0-3-3H12a3 3 0 0 0-3 3v7Zm18-10v35M10 31h34" fill="none" stroke="currentColor" stroke-width="2"/><path d="M27 12c-1.7-6.5-10-6.8-10-1.7 0 3.4 4.4 5.4 10 5.4M27 12c1.7-6.5 10-6.8 10-1.7 0 3.4-4.4 5.4-10 5.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg class="decor question-gift question-gift--right" viewBox="0 0 54 54" aria-hidden="true"><rect x="10" y="19" width="34" height="25" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 19h36v-7a3 3 0 0 0-3-3H12a3 3 0 0 0-3 3v7Zm18-10v35M10 31h34" fill="none" stroke="currentColor" stroke-width="2"/><path d="M27 12c-1.7-6.5-10-6.8-10-1.7 0 3.4 4.4 5.4 10 5.4M27 12c1.7-6.5 10-6.8 10-1.7 0 3.4-4.4 5.4-10 5.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <div class="questions-layout">
+        <p class="eyebrow">UNA AVENTURA DE REGALITOS <span aria-hidden="true">✧</span></p>
+        <article class="question-card" id="questionCard">
+          <span class="letter-seal" aria-hidden="true">♡</span>
+          <div class="question-topline"><span id="questionLabel">Primera pregunta</span><span id="stepCounter">1 / 4</span></div>
+          <div class="photo-gallery" id="photoGallery" aria-label="Gatitos animados"></div>
+          <h2 id="questionTitle">¿Te gustaría acompañarme en esta aventura?</h2>
+          <p class="question-subtitle" id="questionSubtitle">Te prometo muchas risas y momentos bonitos.</p>
           <p class="status-message" id="statusMessage" role="status" aria-live="polite"></p>
-        </div>
+          <div class="response-stage" id="responseStage">
+            <button class="choice choice-yes" id="yesButton" type="button">Sí ♡</button>
+            <button class="choice choice-no" id="noButton" type="button">No</button>
+          </div>
+          <div class="step-dots" id="stepDots" aria-label="Progreso de las preguntas"></div>
+        </article>
+        <p class="questions-note">Hecha con muchísimo cariño, especialmente para ti.</p>
+      </div>
+    </section>
 
-        <div class="response-stage" id="responseStage">
-          <button class="button button-yes" id="yesButton" type="button">Yes</button>
-          <button class="button button-no" id="noButton" type="button">No</button>
+    <section id="finalScreen" class="final-screen" aria-labelledby="finalTitle" hidden>
+      <div class="final-ring" aria-hidden="true"></div>
+      <img class="rose decor final-rose" src="./assets/rosa.svg" alt="" aria-hidden="true">
+      <svg class="decor final-heart" viewBox="0 0 42 40" aria-hidden="true"><path d="M21 35 4.5 19.7A10.7 10.7 0 0 1 20.8 5.8 10.7 10.7 0 0 1 37.5 19.7Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+      <svg class="decor final-gift" viewBox="0 0 54 54" aria-hidden="true"><rect x="10" y="19" width="34" height="25" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 19h36v-7a3 3 0 0 0-3-3H12a3 3 0 0 0-3 3v7Zm18-10v35M10 31h34" fill="none" stroke="currentColor" stroke-width="2"/><path d="M27 12c-1.7-6.5-10-6.8-10-1.7 0 3.4 4.4 5.4 10 5.4M27 12c1.7-6.5 10-6.8 10-1.7 0 3.4-4.4 5.4-10 5.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <div class="final-container">
+        <p class="eyebrow eyebrow-light">EL MEJOR SÍ DEL MUNDO ✧</p>
+        <div class="final-card">
+          <div class="final-photos" id="finalPhotos"></div>
+          <h2 id="finalTitle">¡Sííí! ¡Tenemos una cita!</h2>
+          <p id="finalMessage">Se viene un día lleno de risas, sorpresas y recuerdos que guardaré con mucho amor.</p>
+          <div class="final-actions">
+            <button type="button" id="openGiftButton" class="pill-button">Abre tu regalo sorpresa <span aria-hidden="true">✨</span></button>
+            <button type="button" id="replayButton" class="text-button">Volver al inicio</button>
+          </div>
         </div>
+        <p class="final-signature">Contigo, cualquier tienda se vuelve una aventura ♡</p>
+      </div>
+      <div id="confettiLayer" class="confetti-layer" aria-hidden="true"></div>
+    </section>
 
-      </section>
-
-      <section class="result-view" id="resultView" aria-live="polite" hidden>
-        <div class="result-art">
-          <img class="result-image" id="resultImage" src="./images/image7.gif" alt="Two ducks celebrating together" width="500" height="500">
-          <img class="result-sticker" id="resultSticker" src="./images/baddie.jpg" alt="A glamorous duck" width="200" height="220">
+    <section id="surpriseScreen" class="surprise-screen" aria-labelledby="surpriseTitle" hidden>
+      <div class="surprise-ring" aria-hidden="true"></div>
+      <img class="rose decor surprise-rose-left" src="./assets/rosa.svg" alt="" aria-hidden="true">
+      <img class="rose decor surprise-rose-right" src="./assets/rosa.svg" alt="" aria-hidden="true">
+      <svg class="decor surprise-heart" viewBox="0 0 42 40" aria-hidden="true"><path d="M21 35 4.5 19.7A10.7 10.7 0 0 1 20.8 5.8 10.7 10.7 0 0 1 37.5 19.7Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+      <div class="surprise-container">
+        <p class="eyebrow">REGALO SORPRESA <span aria-hidden="true">✧</span></p>
+        <div class="surprise-card">
+          <h2 id="surpriseTitle">Tu regalo sorpresa ya llegó</h2>
+          <p id="surpriseSubtitle" class="surprise-subtitle">Haz clic en la caja brillante y ábrela mágicamente para descubrir lo que tiene dentro.</p>
+          <button type="button" id="giftBoxButton" class="gift-box-button" aria-label="Abrir regalo sorpresa">
+            <span class="gift-glow" aria-hidden="true"></span>
+            <span class="gift-box-lid" aria-hidden="true"></span>
+            <span class="gift-box-body" aria-hidden="true"></span>
+            <span class="gift-box-ribbon gift-box-ribbon--vertical" aria-hidden="true"></span>
+            <span class="gift-box-ribbon gift-box-ribbon--horizontal" aria-hidden="true"></span>
+            <span class="gift-box-bow bow-left" aria-hidden="true"></span>
+            <span class="gift-box-bow bow-right" aria-hidden="true"></span>
+          </button>
+          <p class="gift-hint" id="giftHint">Tócala para abrirla mágicamente ✨</p>
+          <div id="giftReveal" class="gift-reveal" hidden>
+            <p id="giftMessage" class="gift-message"></p>
+            <div class="gift-cards" id="giftCards"></div>
+            <div class="surprise-actions">
+              <button type="button" id="replayFromGift" class="pill-button">Volver al inicio <span aria-hidden="true">↺</span></button>
+            </div>
+          </div>
         </div>
-        <h1 id="resultTitle" tabindex="-1">It's a date.</h1>
-        <div class="result-actions">
-          <button class="button button-yes" id="shareButton" type="button">Share</button>
-          <button class="button button-secondary" id="replayButton" type="button">Replay</button>
-        </div>
-        <p class="share-status" id="shareStatus" role="status" aria-live="polite"></p>
-      </section>
-    </article>
-
+      </div>
+      <div id="surpriseConfettiLayer" class="confetti-layer" aria-hidden="true"></div>
+    </section>
   </main>
-
-  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
-  <script src="./config.js" defer></script>
-  <script src="./script.js" defer></script>
+  <script src="./config.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>

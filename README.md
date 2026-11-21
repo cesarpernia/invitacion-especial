@@ -1,40 +1,35 @@
-# How to Pull a Baddie This Valentine's Day
+# Invitación especial — aventura contigo
 
-Welcome to the ultimate guide to charm your way into someone's heart with a web app that's as cheeky as you are. This isn't just a project, it's your ticket to Valentine's Day success. You're welcome ;)
-Made using simple HTML/CSS, JavaScript, Anime.js, Tailwind CSS
+Una web estática en español: bienvenida, invitación con mapa, cuatro preguntas Sí/No y final con gatitos.
 
-## Why This Pulls Baddies
+**Sin backend, sin base de datos, sin Node, sin instalaciones y sin dependencias de JavaScript.** Basta con servir estos archivos en GitHub Pages.
 
-- **Runaway "No" Button**: Because who likes rejection? Watch the "No" button run for its life on hover or click
-- **Hilarious Responses**: The app fights for your love with escalating levels of desperation
-- **Smooth AF Animations**: For that extra wow factor
+## Vista previa
 
-## How to Use
+Abre `index.html` con doble clic en Chrome. También funciona en GitHub Pages.
 
-Click [Use this template](https://github.com/new?template_name=be-my-valentine&template_owner=aditisins) and it will create a new repo not a fork with all the files of this project for you.
+## Cambiar textos y fotos
 
-## What's Inside
+Abre `config.js`: ahí se editan la bienvenida, las líneas de la invitación (`invitacionLineas`), las cuatro preguntas, los subtítulos, los mensajes del botón «No», las rutas de los GIF y el texto de celebración. `style.css` contiene todo el diseño visual.
 
-```
-.
-|-- config.js
-|-- index.html
-|-- script.js
-|-- style.css
-|-- images/
-`-- sounds/        
-```
+- El mapa se encuentra en `assets/mapa.png` **exactamente como se adjuntó**, con su transparencia original.
+- Los GIF se copiaron sin cambiar su animación. El único nombre normalizado es `1,1.gif` → `1.1.gif`.
+- Q1: `1.gif` + `1.1.gif`
+- Q2: `2.gif` + `2.1.gif`
+- Q3: `3.gif` + `3.1.gif`
+- Q4: `4.gif`
+- Final: `5.gif` + `5.2.gif` + `5.1.gif`
 
-## Customize It
+## Publicar en GitHub Pages
 
-- **Change the messages**: Update the `messages` array in `script.js` to match your love language
-- **Add more pics/ change the sound**: Toss new images into the `images` folder and update `imagePaths` or add another mp3 file for button click sounds.
-- **Tweak styles**: Go wild in `style.css` or tweak Tailwind classes in `index.html`
+1. Abre el repositorio de GitHub que uses para la invitación.
+2. Ve a **Add file → Upload files**.
+3. **Descomprime el ZIP** y arrastra los **archivos de su interior** a GitHub, junto con la carpeta `assets`. Los archivos `index.html`, `config.js`, `script.js` y `style.css` deben quedar directamente en la raíz (no dentro de otra carpeta).
+4. Confirma con **Commit changes**. Si tu repositorio ya tiene Pages activado, la web se actualiza automáticamente.
+5. Si no tienes Pages: **Settings → Pages → Deploy from a branch → main → /(root) → Save**.
 
-## License
+No hace falta eliminar las carpetas de imágenes antiguas del repo; quedarán sin uso. Se recomienda eliminarlas después de comprobar que la nueva web funciona.
 
-MIT License, baby. Do whatever you want with it—spread the love.
+## Créditos
 
-Go get your baddie. You got this.
-
-
+Adaptación visual y de flujo realizada para esta invitación, tomando como punto de partida la idea y la mecánica pública de la plantilla [aditisins/be-my-valentine](https://github.com/aditisins/be-my-valentine), publicada bajo MIT. Los GIF y el mapa fueron proporcionados por la persona usuaria. Ornamentación SVG original incluida para aproximar la referencia visual.

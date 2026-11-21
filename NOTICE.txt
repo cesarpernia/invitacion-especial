@@ -1,0 +1,3 @@
+Credits: interactive Yes/No invitation mechanics adapted with reference to
+https://github.com/aditisins/be-my-valentine (MIT license).
+The image assets in assets/gatitos and assets/mapa.png were supplied by the user.
